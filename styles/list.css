@@ -1,21 +1,14 @@
-.logo {
-  height: 60px;
-  width: 60px;
-}
-
-#radisson {
-  height: 200px;
+.image {
   width: 250px;
+  height: 250px;
 }
-#lalit {
-  height: 200px;
-  width: 250px;
+#container {
+  margin: 2%;
 }
-#taj {
-  height: 200px;
-  width: 250px;
+ul {
+  padding-left: 14px;
 }
-.footer {
-  height: 20px;
-  width: 22px;
+.card {
+  background-color: rgb(132, 136, 139);
+  width: 40%;
 }

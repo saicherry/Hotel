@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset=“utf-8”>
+    <meta charset="utf-8">
 
     <title>Detail</title>
     <link href="styles/detail.css" rel="stylesheet">    
@@ -9,14 +9,16 @@
   </head>
   <body>
     <div>
+      <header>
       <a href="index.html" ><img src = "assests\images\logo.png"  class="logo"/></a>
-      <span><a href ="login.html" target="_self">Login</a></span>
+     <br>
+      <a href ="login.html" target="_self">Login</a>
+    </header>
     </div>
-    <div>
+    <div class="container">
 
-      <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="radisson"/>
-      <div>
-        <form action="payment.html" autocomplete="off">
+      <img id="card" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">      <div>
+        <form action="payment.html" autocomplete="off" method="POST" target="_self">
         <label for="adults">Adults:</label>
         <input type="number" name="adults" id="adults" min="1" value="1"/><br/>
         <label for="name">Name:</label>
