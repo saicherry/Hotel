@@ -2,70 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
     <link href="styles/index.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <div class="background">
+    <div>
+      <header>
         <img
           src="assests\images\logo.png"
-          class="logo"/>
-        <span><a href="login.html" target="_self">Login</a></span>
+          class="logo"        
+        />
+        <div class="links"><a style="color: black; text-decoration: none;" href="login.html" target="_self">Login</a></div>
+      </header>
+
+      <div id="city" class="view">
+        <input type="text" name="city" placeholder="City" /> <br />
       </div>
-    </nav>
 
-    <div class="search_bar">
-      <input type="city" name="city" placeholder="City" /> <br />
-    </div>
-
-    <div id="images">
-      <a href="list.html" target="_self"
-        ><img
+      <div id="images">
+        <a href="list.html" target="_self"
+          ><img
+            class="cards"
+            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+            height="300"
+            width="300"
+        /></a>
+        <img
           class="cards"
-          src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+          src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
           height="300"
           width="300"
-      /></a>
-      <img
-        class="cards"
-        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-        height="300"
-        width="300"
-      />
-      <img
-        class="cards"
-        src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-        height="300"
-        width="300"
-      />
-      <img
-        class="cards"
-        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-        height="300"
-        width="300"
-      />
-      <br />
-    </div>
-    <a href="#" target="_self">View more></a>
-
-    <footer class="background">
-      <div><a href="contact.html" target="_self">Contact Us</a></div>
-      <div>
-        <span>
-          <a href="https://www.facebook.com" target="_blank"
-            ><img src="assests\images\facebook.png" class="footer"
-          /></a>
-          <a href="https://www.instagram.com" target="_blank"
-            ><img src="assests\images\instagram.png" class="footer"
-          /></a>
-          <a href="https://twitter.com" target="_blank"
-            ><img src="assests\images\twitter.png" class="footer"
-          /></a>
-        </span>
-        <div>&copy;2020 ROOM SEARCH PVT.LTD.</div>
+        />
+        <img
+          class="cards"
+          src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+          height="300"
+          width="300"
+        />
+        <img
+          class="cards"
+          src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+          height="300"
+          width="300"
+        />
+        <br />
       </div>
-    </footer>
+    </div>
+      <div class="view">
+        <a href="#" target="_self" style="text-align: center">View more>></a>
+      </div>
+      <footer>
+        <a id="contact_1" href="contact.html" target="_self" class="contact">Contact Us</a>
+        <p id="para">© 2020 ROOM SEARCH PVT. LTD.</p>
+        <div class="icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="social" src="assests/images/facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img class="social" src="assests/images/instagram.png"
+          /></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><img class="social" src="assests/images/twitter.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

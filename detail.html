@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
     <link href="styles/detail.css" rel="stylesheet">    
 
   </head>
@@ -11,8 +12,8 @@
     <div>
       <header>
       <a href="index.html" ><img src = "assests\images\logo.png"  class="logo"/></a>
-     <br>
-      <a href ="login.html" target="_self">Login</a>
+     
+     <div class="links"><a href="login.html" target="_self">Login</a></div>
     </header>
     </div>
     <div class="container">
@@ -49,14 +50,19 @@
   </div>
 
   <footer>
-        <div><a href="contact.html">Contact Us</a></div>
-          <span>
-            <a href="https://www.facebook.com" target="_blank"><img src="assests\images\facebook.png" class="footer" /></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="assests\images\instagram.png" class="footer" /></a>
-            <a href="https://twitter.com" target="_blank"><img src="assests\images\twitter.png" class="footer" /></a>
-            </span>
-          <div>&copy;2020 ROOM SEARCH PVT.LTD.</div>
-      
-  </footer>    
+    <a id="contact_1" href="contact.html" target="_self" class="contact">Contact Us</a>
+    <p id="para">© 2020 ROOM SEARCH PVT. LTD.</p>
+    <div class="icons">
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img class="social" src="assests/images/facebook.png"
+      /></a>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img class="social" src="assests/images/instagram.png"
+      /></a>
+      <a href="https://www.twitter.com/" target="_blank"
+        ><img class="social" src="assests/images/twitter.png"
+      /></a>
+    </div>
+  </footer>
   </body>
 </html>
