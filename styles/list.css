@@ -5,26 +5,46 @@
   padding-right: 30px;
 }
 
-.card {
+.card1 {
   background-color: lightgray;
   width: 40%;
-  margin: 0px 70px 50px;
   display: inline-block;
+  margin: 0px 70px 50px;
 }
-.card a {
+.card1 a {
   text-decoration: none;
   color: black;
 }
-.list ul a {
+#list {
+  float: right;
   color: black;
-  font-weight: bold;
+}
+#mapp {
+  border: none;
+  color: black;
+}
+#view {
+  margin: 20px 0px;
+}
+#flex1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.card1:hover {
+  background-color: rosybrown;
+}
+
+.card1 a:hover {
   text-decoration: none;
-  padding: 20px;
+  color: black;
 }
-.list ul {
-  list-style-type: none;
-  text-align: center;
+#map {
+  display: none;
 }
-.list ul li {
-  display: inline;
+.card1 h3 {
+  margin-top: 30px;
 }
