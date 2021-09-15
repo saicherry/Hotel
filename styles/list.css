@@ -1,15 +1,17 @@
 .image {
   width: 250px;
   height: 250px;
+  float: left;
+  padding-right: 30px;
 }
 
 .card {
-  background-color: rgb(132, 136, 139);
+  background-color: lightgray;
   width: 40%;
   margin: 0px 70px 50px;
   display: inline-block;
 }
-#card a {
+.card a {
   text-decoration: none;
   color: black;
 }
@@ -25,7 +27,4 @@
 }
 .list ul li {
   display: inline;
-}
-#para {
-  
 }
