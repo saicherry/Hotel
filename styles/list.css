@@ -4,7 +4,6 @@
   float: left;
   padding-right: 30px;
 }
-
 .card1 {
   background-color: lightgray;
   width: 40%;
@@ -33,11 +32,9 @@
   flex-wrap: wrap;
   margin-bottom: 100px;
 }
-
 .card1:hover {
   background-color: rosybrown;
 }
-
 .card1 a:hover {
   text-decoration: none;
   color: black;
@@ -47,4 +44,13 @@
 }
 .card1 h3 {
   margin-top: 30px;
+}
+.rating {
+  color: orange;
+}
+#noRating {
+  color: black;
+}
+.container-fluid {
+  margin-top: 100px;
 }

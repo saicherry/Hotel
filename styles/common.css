@@ -9,15 +9,14 @@
 }
 body {
   background-color: #e0e0e0;
-  background-color: #e0e0e0;
   font-family: "Ubuntu", sans-serif;
 }
 #header {
   background-color: rosybrown;
-
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1;
 }
@@ -36,11 +35,9 @@ body {
 }
 #login {
   float: right;
-
   margin-right: 2%;
   background-color: lightgray;
 }
-
 .links a {
   text-decoration: none;
   color: black;
@@ -52,4 +49,11 @@ body {
 #copyright {
   font-size: 12px;
   text-align: center;
+}
+.rating {
+  color: orange;
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
 }

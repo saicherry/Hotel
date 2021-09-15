@@ -11,35 +11,68 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 380px;
-
   justify-content: center;
   align-items: center;
 }
-input[type="text"]:focus {
-  outline: none;
-}
-#images {
-  margin-left: 20%;
+#inputBox {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 50px 0px;
+  justify-content: center;
 }
-
 #city input {
-  margin: 190px auto;
   background-color: #f1f1f1;
   border: 1px solid transparent;
   padding-left: 10px;
   font-size: 16px;
   border-radius: 12px;
 }
-
-.view {
-  text-align: center;
-  margin-bottom: 30px;
+input[type="text"]:focus {
+  outline: none;
 }
-.view a {
-  text-decoration: none;
-  color: black;
+.flex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
+#view {
+  margin-bottom: 90px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.background {
+  background-color: #f1f1f1;
+}
+
+.overlay {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 0;
+  left: 0px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25%;
+}
+
+.lay:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: #f1f1f1;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  position: relative;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.lay {
+  position: relative;
+}
+
+#viewMore {
+  display: none;
 }

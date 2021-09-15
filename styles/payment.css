@@ -1,3 +1,8 @@
+#image {
+  max-width: 270px;
+  max-height: 300px;
+  padding-right: 20px;
+}
 .container1 {
   background-color: rgb(132, 136, 139);
   width: 50%;
@@ -7,22 +12,13 @@
   flex-direction: row;
 }
 #information {
-  margin: 2%;
   background-color: rosybrown;
+  margin: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
 }
-#total {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 1% 2%;
-}
-#image {
-  max-width: 270px;
-  max-height: 300px;
-  padding-right: 20px;
-}
-
 #pay {
   color: black;
   text-decoration: none;
@@ -32,7 +28,6 @@
   flex-direction: column;
   margin-top: 60px;
 }
-
 #information p {
   font-family: cursive;
 }
