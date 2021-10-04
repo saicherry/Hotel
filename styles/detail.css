@@ -1,78 +1,173 @@
-.cards {
-  width: 150px;
-  height: 150px;
-  border-radius: 25%;
-  box-shadow: 10px 10px 10px grey;
+/*
+
+
+.carousels {
+  width: 500px;
+  max-height: 350px;
+
+  display: block;
+  margin: 10px auto;
 }
-#city {
-  display: flex;
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 380px;
-  justify-content: center;
-  align-items: center;
-}
-#inputBox {
-  display: flex;
-  justify-content: center;
-}
-#city input {
-  background-color: #f1f1f1;
-  border: 1px solid transparent;
-  padding-left: 10px;
-  font-size: 16px;
-  border-radius: 12px;
-}
-input[type="text"]:focus {
-  outline: none;
-}
-.flex1 {
+.inner {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 50px 0px;
+  max-height: 400px;
+  border: 1px solid black;
+  align-items: center;
+  margin-top: 30px;
 }
-#view {
-  margin-bottom: 90px;
-  padding-bottom: 30px;
+#demo {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  border-right: 1px solid black;
+}
+.right {
+  width: 30%;
+}
+label {
+  text-align: left;
+}
+input[type="text"],
+[type="number"],
+[type="date"] {
+  width: 60%;
+  float: right;
+}
+#book {
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+}
+form {
+  padding: 0px 20px;
+}
+h5 {
+  font-family: cursive;
+  font-weight: bold;
+}
+.container-fluid {
+  margin-bottom: 100px;
+}
+.container-fluid h2 {
+  margin-top: 30px;
+}
+#arrow {
+  font-size: 55px;
+  color: rosybrown;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+#slideshow-container, #booking-form {
+  padding: 1%;
   text-align: center;
+  border: 1px solid black;
+  max-height: 400px;
 }
-.background {
-  background-color: #f1f1f1;
+#slideshow-container {
+  margin-left: 2%;
+  border-right: none;
+  flex-grow: 3;
+  max-width: 60%;
+}
+#booking-form {
+  margin-right: 2%;
+  flex-grow: 1;
+}
+#hotel-description {
+  margin: 2%;
+  padding-bottom: 5%;
+}
+#detail-container {
+  margin-top:7%;
+  margin-bottom: 7%;
+}
+#slideshow-booking {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.slider-image {
+  max-height: 350px;
+}
+.outer {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+#book-now {
+  margin-top: 5%;
+}
+.inner {
+  width: 60%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+height: 100px;
+width: 100px;
+background-image: none;
+}
+.carousel-control-next-icon:after
+{
+content: '>';
+font-size: 55px;
+color: black;
 }
 
-.overlay {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  top: 0;
-  left: 0px;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 25%;
+.carousel-control-prev-icon:after {
+content: '<';
+font-size: 55px;
+color: black;
 }
 
-.lay:hover .overlay {
-  opacity: 0.5;
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 0;
+}
+.carousel-image {
+  max-height: 370px;
 }
 
-.text {
-  color: #f1f1f1;
-  font-size: 20px;
-  top: 50%;
-  left: 50%;
-  position: relative;
+@media screen and (max-width: 576px) {
 
-  transform: translate(-50%, -50%);
-  text-align: center;
+  #slideshow-container {
+      margin-left: 0%;
+      max-width: 100%;
+      border-right: 1px solid black;
+  }
+
+  #booking-form {
+      width: 100%;
+  }
+
+  #detail-container {
+      margin-top: 20%;
+      margin-bottom: 22%;
+  }
+
+  #slideshow-booking {
+      flex-direction: column;
+  }
+
+  .slider-image {
+      max-height: 250px;
+      width: 100%;
+  }
 }
-.lay {
-  position: relative;
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #detail-container {
+      margin-top: 10%;
+  }
 }
 
-#viewMore {
-  display: none;
-}

@@ -1,4 +1,4 @@
-
+/*
 
 loginTemplate();
 footerTemplate();
@@ -31,6 +31,7 @@ function footerTemplate(){
 document.getElementById('footer').innerHTML += footer;
 }
 
+*/
 
 
 
@@ -39,7 +40,6 @@ document.getElementById('footer').innerHTML += footer;
 
 
 
-/*
 
 
 let disableLoader = () => {
@@ -197,7 +197,6 @@ let checkLogin = () => {
 
 checkLogin();
 
-*/
 
 
 
