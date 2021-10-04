@@ -1,54 +1,7 @@
-
-function mapView() {
-    document.getElementById('mapp').style.backgroundColor="#007bff";
-    document.getElementById('list').style.backgroundColor="transparent";
-    document.getElementById('list').style.border="none";
-    if (document.getElementById('flex1')) {
-
-        if (document.getElementById('flex1').style.display == 'none') {
-            document.getElementById('flex1').style.display = 'none';
-            document.getElementById('map').style.display = 'block';
-        }
-        else {
-            document.getElementById('flex1').style.display = 'none';
-            document.getElementById('map').style.display = 'block';
-        }
-    }
-}
-
-function listView(){
-    document.getElementById('list').style.backgroundColor="#007bff";
-    document.getElementById('mapp').style.backgroundColor="transparent";
-    document.getElementById('mapp').style.border="none";
-    if (document.getElementById('map')) {
-
-        if (document.getElementById('map').style.display == 'none') {
-            document.getElementById('map').style.display = 'block';
-            document.getElementById('flex1').style.display = 'none';
-        }
-        else {
-            document.getElementById('map').style.display = 'none';
-            document.getElementById('flex1').style.display = 'block';
-        }
-    }
-
-} 
-
-
-
-
-
-
-
 let urlParams = new URLSearchParams(window.location.search);
 const API_URL = "https://travel-advisor.p.rapidapi.com/";
 const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
 const travelAdvisorKey = "7a54bb848fmshfb488ece4937a3fp167955jsn3f87ad320431";
-
-
-
-
-
 
 //this function is used to initialize the google map and place the markers at the position of the hotel from the API
 let initMap = locations => {
@@ -73,9 +26,6 @@ let initMap = locations => {
         })(marker, count));
     }
 }
-
-
-
 
 let initList = hotelList => {
     let hotelListElement = document.getElementById('hotel-list');
@@ -131,5 +81,3 @@ let fetchHotelListAPI = () => {
 }
 
 fetchHotelListAPI();
-
-

@@ -1,21 +1,3 @@
-/*function view(){
-    let images=document.getElementById('viewMore');
-    let buttonContent=document.getElementById('viewButton');
-
-  if(images.style.display==="none"){
-        images.style.display="flex";
-        buttonContent.innerText="View less";
-  }
-  else{
-      images.style.display="none";
-      buttonContent.innerText="View more>>";
-  }
-} 
-
-*/
-
-
-
 
 const API_URL = "https://travel-advisor.p.rapidapi.com/";
 const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
