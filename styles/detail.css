@@ -1,55 +1,78 @@
-.carousels {
-  width: 500px;
-  max-height: 350px;
-
-  display: block;
-  margin: 10px auto;
+.cards {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
 }
-.inner {
+#city {
   display: flex;
-  flex-direction: row;
-  max-height: 400px;
-  border: 1px solid black;
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
 }
-#demo {
+#inputBox {
   display: flex;
   justify-content: center;
-  width: 70%;
-  border-right: 1px solid black;
 }
-.right {
-  width: 30%;
+#city input {
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 12px;
 }
-label {
-  text-align: left;
+input[type="text"]:focus {
+  outline: none;
 }
-input[type="text"],
-[type="number"],
-[type="date"] {
-  width: 60%;
-  float: right;
+.flex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 0px;
 }
-#book {
-  height: 40px;
-  margin: 0 auto;
-  display: block;
+#view {
+  margin-bottom: 90px;
+  padding-bottom: 30px;
+  text-align: center;
 }
-form {
-  padding: 0px 20px;
+.background {
+  background-color: #f1f1f1;
 }
-h5 {
-  font-family: cursive;
-  font-weight: bold;
+
+.overlay {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 0;
+  left: 0px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25%;
 }
-.container-fluid {
-  margin-bottom: 100px;
+
+.lay:hover .overlay {
+  opacity: 0.5;
 }
-.container-fluid h2 {
-  margin-top: 30px;
+
+.text {
+  color: #f1f1f1;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  position: relative;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-#arrow {
-  font-size: 55px;
-  color: rosybrown;
+.lay {
+  position: relative;
+}
+
+#viewMore {
+  display: none;
 }
