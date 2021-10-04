@@ -19,7 +19,7 @@
 
 const API_URL = "https://travel-advisor.p.rapidapi.com/";
 const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
-const travelAdvisorKey = "24d38b7b71mshf56ca56c46d27abp13fcfbjsn0b9e0926a234";
+const travelAdvisorKey = "7a54bb848fmshfb488ece4937a3fp167955jsn3f87ad320431";
 
 
 let viewMore = () => {
